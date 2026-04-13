@@ -1,0 +1,42 @@
+========== MAINREBAR DEBUG ==========
+THIS_DIR  = Z:\Revit\Revit\Template\Dynamo\Extensions\CUR26.extension\CUR26.Kết cấu.tab\Thép.panel\Rebarcolumn.pushbutton\rebarrun
+LIB_DIR   = Z:\Revit\Revit\Template\Dynamo\Extensions\CUR26.extension\CUR26.Kết cấu.tab\Thép.panel\Rebarcolumn.pushbutton\lib
+RUN_PATH  = Z:\Revit\Revit\Template\Dynamo\Extensions\CUR26.extension\CUR26.Kết cấu.tab\Thép.panel\Rebarcolumn.pushbutton\lib\Run.txt
+INF_PATH  = Z:\Revit\Revit\Template\Dynamo\Extensions\CUR26.extension\CUR26.Kết cấu.tab\Thép.panel\Rebarcolumn.pushbutton\lib\Inf.txt
+
+BAR SEARCH:
+  raw = D18
+  parsed_name = D18
+  parsed_dia  = 18.0
+  SELECT = exact name match
+
+SUMMARY:
+  Column        = 12480097
+  main_bar_raw  = D18 | source=INF | key=main_bar
+  dia_mm        = 18.000
+  cx_count      = 2
+  cy_count      = 2
+  Lb_mm         = 350.000
+  system_len_mm = 1050.000
+  extra_inset   = 30.000
+  total_inset   = 39.000
+
+POINTS:
+  [1] X=-71.000 | Y=-161.000 | face=LEFT
+  [2] X=71.000 | Y=-161.000 | face=RIGHT
+  [3] X=-71.000 | Y=161.000 | face=LEFT
+  [4] X=71.000 | Y=161.000 | face=RIGHT
+
+  create face=LEFT | expected=(-71.000, -161.000) | insert=(-62.000, -170.000)
+  create face=RIGHT | expected=(71.000, -161.000) | insert=(62.000, -152.000)
+  create face=LEFT | expected=(-71.000, 161.000) | insert=(-62.000, 152.000)
+  create face=RIGHT | expected=(71.000, 161.000) | insert=(62.000, 170.000)
+
+CREATED:
+  total = 4
+  [1] RebarId=13263289
+  [2] RebarId=13263290
+  [3] RebarId=13263291
+  [4] RebarId=13263292
+
+========== END ==========

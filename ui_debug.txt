@@ -1,0 +1,21 @@
+Start _get_selected_column_ids_text
+column_infos count = 2
+INDEX = 0
+--- COLUMN INFO ---
+keys = base_level, base_offset_mm, center_x_ft, center_y_ft, depth_mm, element, height_mm, id, mark, max_x_ft, max_y_ft, min_x_ft, min_y_ft, name, top_level, top_offset_mm, width_mm, z_max_ft, z_mid, z_min_ft
+element exists = True
+element class = Autodesk.Revit.DB.FamilyInstance
+element id str(raw) = 12480097
+element id via Value = 12480097
+sid stripped = 12480097
+accepted sid = 12480097
+INDEX = 1
+--- COLUMN INFO ---
+keys = base_level, base_offset_mm, center_x_ft, center_y_ft, depth_mm, element, height_mm, id, mark, max_x_ft, max_y_ft, min_x_ft, min_y_ft, name, top_level, top_offset_mm, width_mm, z_max_ft, z_mid, z_min_ft
+element exists = True
+element class = Autodesk.Revit.DB.FamilyInstance
+element id str(raw) = 11586402
+element id via Value = 11586402
+sid stripped = 11586402
+accepted sid = 11586402
+FINAL COLUMN_IDS = 12480097,11586402
