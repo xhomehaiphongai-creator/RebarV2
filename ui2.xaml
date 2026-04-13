@@ -1,0 +1,150 @@
+<Grid
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="#F3F0FA"
+    Margin="0">
+
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1*"/>
+        <ColumnDefinition Width="1*"/>
+    </Grid.ColumnDefinitions>
+
+    <!-- LEFT -->
+    <StackPanel Grid.Column="0" Margin="0,0,8,0">
+        <Border Background="#7E57C2" Height="28">
+            <TextBlock Text="ĐOẠN BẺ MÓC CỐT THÉP"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       Margin="10,4,0,0"/>
+        </Border>
+
+        <Border Background="#FFFFFF" BorderBrush="#D9D0EE" BorderThickness="1" Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="110"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="34"/>
+                    <RowDefinition Height="34"/>
+                    <RowDefinition Height="34"/>
+                    <RowDefinition Height="34"/>
+                    <RowDefinition Height="34"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0"
+                           Text="Chiều dài cố định L (mm):"
+                           VerticalAlignment="Center"/>
+                <TextBox x:Name="txt_fixed_length_L"
+                         Grid.Row="0" Grid.Column="1"
+                         Height="26"
+                         VerticalContentAlignment="Center"
+                         Text="300"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0"
+                           Text="Chiều dài nối chồng Ln (mm):"
+                           VerticalAlignment="Center"/>
+                <TextBox x:Name="txt_splice_length_Ln"
+                         Grid.Row="1" Grid.Column="1"
+                         Height="26"
+                         VerticalContentAlignment="Center"
+                         Text="600"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0"
+                           Text="Nối cách chân cột L (mm):"
+                           VerticalAlignment="Center"/>
+                <TextBox x:Name="txt_splice_from_bottom_L"
+                         Grid.Row="2" Grid.Column="1"
+                         Height="26"
+                         VerticalContentAlignment="Center"
+                         Text="0"/>
+
+                <CheckBox x:Name="chk_top_hook_upper"
+                          Grid.Row="3" Grid.ColumnSpan="2"
+                          Content="Bẻ móc cốt thép tầng trên cùng"
+                          VerticalAlignment="Center"
+                          Margin="0,4,0,0"/>
+
+                <CheckBox x:Name="chk_continue_wait_top"
+                          Grid.Row="4" Grid.ColumnSpan="2"
+                          Content="Tiếp tục chờ thép trên cùng"
+                          VerticalAlignment="Center"
+                          Margin="0,4,0,0"/>
+            </Grid>
+        </Border>
+
+        <Border Background="#7E57C2" Height="28" Margin="0,12,0,0">
+            <TextBlock Text="GẮN THÊM THÔNG TIN CHO THÉP"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       Margin="10,4,0,0"/>
+        </Border>
+
+        <Border Background="#FFFFFF" BorderBrush="#D9D0EE" BorderThickness="1" Padding="10">
+            <CheckBox x:Name="chk_auto_partition"
+                      Content="Tự động gán Partition cho thép"
+                      VerticalAlignment="Center"/>
+        </Border>
+    </StackPanel>
+
+    <!-- RIGHT -->
+    <StackPanel Grid.Column="1" Margin="8,0,0,0">
+        <Border Background="#7E57C2" Height="28">
+            <TextBlock Text="THÉP CHỦ &amp; KHOẢNG CÁCH RẢI ĐAI"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"
+                       Margin="10,4,0,0"/>
+        </Border>
+
+        <Border Background="#FFFFFF" BorderBrush="#D9D0EE" BorderThickness="1" Padding="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="110"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="34"/>
+                    <RowDefinition Height="34"/>
+                    <RowDefinition Height="34"/>
+                    <RowDefinition Height="34"/>
+                </Grid.RowDefinitions>
+
+                <CheckBox x:Name="chk_split_rebar_at_foundation_wait"
+                          Grid.Row="0" Grid.ColumnSpan="2"
+                          Content="Tách thép thành 2 đoạn tại vị trí thép chờ móng"
+                          VerticalAlignment="Center"/>
+
+                <CheckBox x:Name="chk_enable_tie_spacing"
+                          Grid.Row="1" Grid.Column="0"
+                          Content="Khoảng cách cốt đai (mm):"
+                          VerticalAlignment="Center"/>
+                <TextBox x:Name="txt_tie_spacing_mm"
+                         Grid.Row="1" Grid.Column="1"
+                         Height="26"
+                         VerticalContentAlignment="Center"
+                         Text="300"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0"
+                           Text="Hm (mm):"
+                           VerticalAlignment="Center"/>
+                <TextBox x:Name="txt_Hm_mm"
+                         Grid.Row="2" Grid.Column="1"
+                         Height="26"
+                         VerticalContentAlignment="Center"
+                         Text="350"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0"
+                           Text="Lb (mm):"
+                           VerticalAlignment="Center"/>
+                <TextBox x:Name="txt_Lb_mm"
+                         Grid.Row="3" Grid.Column="1"
+                         Height="26"
+                         VerticalContentAlignment="Center"
+                         Text="350"/>
+            </Grid>
+        </Border>
+    </StackPanel>
+</Grid>
